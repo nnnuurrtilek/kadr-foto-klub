@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Кадр — сүрөткө тартууну үйрөнүүгө арналган окуу сайты.">
+  <title>Кадр — фото ийрими</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header" id="top">
+ <div class="container header-inner"><a class="logo" href="#top">КАДР<span>.</span></a>
+ <button class="menu-button" id="menu-button" type="button" aria-label="Менюну ачуу" aria-controls="main-nav" aria-expanded="false">☰ Меню</button>
+ <nav id="main-nav" aria-label="Негизги меню"><a href="#about">Биз жөнүндө</a><a href="#courses">Сабактар</a><a href="#gallery">Галерея</a><a href="#contact">Байланыш</a></nav>
+ </div>
+</header>
+<main>
+ <section class="intro container" aria-labelledby="intro-title">
+   <div class="intro-text"><span class="label">Фото ийрим · Бишкек</span><h1 id="intro-title">Жакшы сүрөт тартуу — үйрөнө турган өнөр.</h1><p>Телефон менен тартсаң да, фотоаппарат колдонсоң да, негизин туура түшүнүү маанилүү. «Кадр» — жаңы баштагандар үчүн чакан окуу долбоору.</p><a class="primary" href="#courses">Сабактарды көрүү →</a></div>
+   <img src="images/object.jpg" width="1200" height="790" alt="Стол үстүндөгү кофенин сүрөтү — предметтик кадрдын мисалы">
+ </section>
+ <section id="about" class="section alt"><div class="container"><h2>Биз жөнүндө</h2><p class="narrow">Бул сайт фото ийримдин окуу үлгүсү катары жасалган. Биз жарыкты байкоо, туура ракурс тандоо жана кадр түзүүнү жөнөкөй тапшырмалар менен үйрөтөбүз. Баштоо үчүн кымбат техника шарт эмес.</p><div class="three"><article class="simple"><strong>01</strong><h3>Жөнөкөй түшүндүрмө</h3><p>Терминдерди мисал менен түшүндүрөбүз.</p></article><article class="simple"><strong>02</strong><h3>Көбүрөөк практика</h3><p>Ар бир темадан кийин чакан тапшырма болот.</p></article><article class="simple"><strong>03</strong><h3>Өз темпиң менен</h3><p>Кайталап көрүүгө ыңгайлуу кыска сабактар.</p></article></div></div></section>
+ <section id="courses" class="section container"><div class="section-head"><div><h2>Сабактар</h2><p>Кызыккан темаңызды тандаңыз.</p></div><div class="filters" role="group" aria-label="Сабактарды тандоо"><button type="button" class="filter active" data-filter="all" aria-pressed="true">Баары</button><button type="button" class="filter" data-filter="basic" aria-pressed="false">Баштапкы</button><button type="button" class="filter" data-filter="practice" aria-pressed="false">Практика</button></div></div><div class="course-grid" id="course-list">
+  <article class="course" data-group="basic"><span class="type">Баштапкы</span><h3>Камеранын негиздери</h3><p>Фокус, экспозиция жана кадрдын өлчөмү.</p><div class="course-footer"><span>3 сабак</span><button type="button" class="choose" data-course="Камеранын негиздери">Тандоо</button></div></article>
+  <article class="course" data-group="basic"><span class="type">Баштапкы</span><h3>Телефон менен сүрөт</h3><p>Жарыкты пайдалануу жана так кадр тартуу.</p><div class="course-footer"><span>2 сабак</span><button type="button" class="choose" data-course="Телефон менен сүрөт">Тандоо</button></div></article>
+  <article class="course" data-group="practice"><span class="type">Практика</span><h3>Предметтик сүрөт</h3><p>Үйдөгү буюмдарды кооз жана түшүнүктүү тартуу.</p><div class="course-footer"><span>4 сабак</span><button type="button" class="choose" data-course="Предметтик сүрөт">Тандоо</button></div></article>
+ </div></section>
+ <section class="section alt" id="gallery"><div class="container"><h2>Сүрөт мисалдары</h2><p class="narrow">Төмөнкү сүрөттөр ар башка темадагы кадрларды көрсөтөт. Алар окуу үчүн колдонулган даяр үлгүлөр, ийрим катышуучуларынын иштери эмес.</p><div class="gallery"><figure><img loading="lazy" src="images/object.jpg" width="1200" height="790" alt="Предметтик сүрөт: кофе чынысы"><figcaption>Предметтик кадр</figcaption></figure><figure><img loading="lazy" src="images/animals.jpg" width="1200" height="790" alt="Мышыктын сүрөтү"><figcaption>Жаныбарды тартуу</figcaption></figure><figure><img loading="lazy" src="images/travel.jpg" width="1200" height="790" alt="Асмандагы ракета"><figcaption>Алыстан тартылган көрүнүш</figcaption></figure></div></div></section>
+ <section class="section container" id="contact"><div class="contact-grid"><div><h2>Байланыш</h2><p>Сабак тууралуу сурооңуз болсо, төмөнкү форма аркылуу билдирүү түзүп көрүңүз.</p><p class="note">Бул — окуу макетиндеги форма. Маалымат эч жакка жөнөтүлбөйт.</p><div class="details"><p><strong>Шаар:</strong> Бишкек</p><p><strong>Иштөө форматы:</strong> окуу үлгүсү</p><p><strong>Э-почта:</strong> kadr-demo@example.com</p></div></div><form id="request-form" novalidate><label for="name">Атыңыз</label><input id="name" name="name" autocomplete="given-name" minlength="2" maxlength="40" required placeholder="Атыңызды жазыңыз"><label for="course">Кайсы сабак кызыктырат?</label><select id="course" name="course" required><option value="">Сабакты тандаңыз</option><option>Камеранын негиздери</option><option>Телефон менен сүрөт</option><option>Предметтик сүрөт</option></select><label for="message">Кошумча суроо (милдеттүү эмес)</label><textarea id="message" name="message" maxlength="250" rows="3" placeholder="Сурооңуз болсо жазыңыз"></textarea><button class="primary" type="submit">Текшерүү</button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><span>© 2026 Кадр · Окуу долбоору</span><a href="#top">Жогору ↑</a></div></footer>
+</body>
+</html>
